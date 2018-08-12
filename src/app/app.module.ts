@@ -5,9 +5,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from './shared/material-components.module';
 
 import { AppComponent } from './app.component';
-import { TopNavComponent } from './shared/top-nav/top-nav.component';
-import { UserBadgeComponent } from './shared/user-badge/user-badge.component';
-import { NavigationComponent } from './shared/navigation/navigation.component';
+import { TopNavComponent } from './shared/components/top-nav/top-nav.component';
+import { UserBadgeComponent } from './shared/components/user-badge/user-badge.component';
+import { NavigationComponent } from './shared/components/navigation/navigation.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 import { UsersComponent } from './pages/users/users.component';
@@ -16,6 +16,7 @@ import { InvoicesComponent } from './pages/invoices/invoices.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { ExpensesComponent } from './pages/expenses/expenses.component';
 import { PurchaseOrdersComponent } from './pages/purchase-orders/purchase-orders.component';
+import {NavigationService} from './shared/services/navigation.service';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,9 @@ import { PurchaseOrdersComponent } from './pages/purchase-orders/purchase-orders
     MatIconModule,
     MatListModule,
   ],
-  providers: [],
+  providers: [
+    NavigationService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

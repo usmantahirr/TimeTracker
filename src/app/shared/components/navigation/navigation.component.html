@@ -12,9 +12,13 @@
       <i class="company-name">EmergiTRACK</i>
     </mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a
+        mat-list-item
+        *ngFor="let item of navItems"
+        href="{{item.router}}"
+      >
+        <mat-icon>{{item.icon}}</mat-icon>{{item.name}}
+      </a>
     </mat-nav-list>
   </mat-sidenav>
 

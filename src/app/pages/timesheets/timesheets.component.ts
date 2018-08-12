@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-timesheets',
+  selector: 'et-timesheets',
   templateUrl: './timesheets.component.html',
   styleUrls: ['./timesheets.component.css']
 })

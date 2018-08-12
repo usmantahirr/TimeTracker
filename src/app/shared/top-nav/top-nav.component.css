@@ -1,0 +1,23 @@
+.logo {
+  margin-right: 10px;
+}
+
+.company-name {
+  font-family: 'Lora', serif;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.language {
+  font-size: 14px;
+  font-weight: bolder;
+  margin: 0 5px;
+}
+
+.divider {
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 64px;
+}

@@ -16,5 +16,6 @@ mat-icon {
 }
 
 .active {
+  color: #ff8f00;
   background-color: rgba(130, 130, 130, 0.1);
 }
